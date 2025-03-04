@@ -1,0 +1,16 @@
+footer {
+  min-height: 250px;
+  box-sizing: border-box;
+}
+
+footer p.mb-0 {
+  line-height: 1.6;
+  min-height: 24px;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("/fonts/CustomFont.woff2") format("woff2");
+  font-display: swap;
+}
