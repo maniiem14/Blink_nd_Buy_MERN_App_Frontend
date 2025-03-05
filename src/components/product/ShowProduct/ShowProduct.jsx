@@ -51,7 +51,7 @@ const ShowProduct = () => {
           </ol>
         </nav>
         
-        <h1 style={{ textAlign: "center", fontWeight: "bold", fontSize: "2rem", margin: "5px" }}>
+        <h1 style={{ textAlign: "center", fontWeight: "bold", fontSize: "clamp(1.5rem, 4vw, 2rem)", margin: "5px" }}>
           Explore Products
         </h1>
 

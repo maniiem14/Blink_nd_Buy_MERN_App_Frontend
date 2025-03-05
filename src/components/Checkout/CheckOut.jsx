@@ -8,8 +8,6 @@ const Checkout = () => {
   const { cart, selectedAddress, url, user, clearCart } = useContext(AppContext);
   const [quantity, setQuantity] = useState(0);
   const [price, setPrice] = useState(0);
-  // const { selectedAddress } = useContext(AppContext);
-
   const navigate = useNavigate();
 
   const goBack = () => {

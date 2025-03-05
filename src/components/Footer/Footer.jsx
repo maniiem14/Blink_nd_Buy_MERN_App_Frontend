@@ -14,7 +14,7 @@ const Footer = () => {
             <Link
               to="/"
               style={{
-                fontSize: "24px",
+                fontSize: "clamp(1.3rem, 4vw, 1.6rem)",
                 textDecoration: "none",
                 minHeight: "40px",
                 color: "red",

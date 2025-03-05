@@ -1,10 +1,8 @@
-import React, { useContext, useCallback, useMemo, useRef } from "react";
+import React, { useMemo, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import AppContext from "../../context/AppContext";
 import "./Categories.css";
 
 const Categories = () => {
-  const { setfilteredData, products } = useContext(AppContext);
   const location = useLocation();
   const navigate = useNavigate();
   const categorySectionRef = useRef(null);
@@ -43,17 +41,6 @@ const Categories = () => {
       },
     ],
     []
-  );
-
-  const filterByCategory = useCallback(
-    (cat) => {
-      setfilteredData(
-        products.filter(
-          (data) => data.category.toLowerCase() === cat.toLowerCase()
-        )
-      );
-    },
-    [products, setfilteredData]
   );
 
   if (location.pathname !== "/") return null;

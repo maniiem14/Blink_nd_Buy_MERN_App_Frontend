@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import "./cart.css";
+import "./Cart.css";
 import EmptyCart from "/assets/EmptyCart.webp";
 import { useNavigate } from "react-router-dom";
 import AppContext from "../../context/AppContext";
